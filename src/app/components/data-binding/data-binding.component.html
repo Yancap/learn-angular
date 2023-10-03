@@ -1,0 +1,45 @@
+<section>
+  <h1>Data Binding</h1>
+  <div>
+    <h2>Interpolation</h2>
+    <p>{{"Interpolations são feitas usando {{variavel}}"}}</p>
+    <p>{{ texto }}</p>
+  </div>
+  <div>
+    <h2>Property Binding</h2>
+    <p>
+      Property Binding são usados para definir propriedades e atributos nas
+      tags, com duas formas
+    </p>
+    <ul>
+      <li [id]="id">
+        <pre>[propriedade]=”valor”</pre>
+      </li>
+      <li id="{{ id }}">
+        <pre>propriedade=”{{valor}/}”</pre>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h2>Event Binding</h2>
+    <p>
+      Event Binding são feitos utilizando o nome entre parênteses (evento),
+      sendo possível passar o parâmetro ”event” para função
+    </p>
+    <pre>(event)=”funcao($event)”</pre>
+    <button (click)="handleEvent($event)">Click em mim</button>
+    <button (click)="handleEvent()">Click aqui também</button>
+  </div>
+
+  <div>
+    <h2>Two Way Data Binding</h2>
+    <p>
+      São utilizados especialmente para Forms e Inputs
+    </p>
+    <pre>[(ngModel)]=”variavel”</pre>
+    <form action="">
+      <input type="text" [(ngModel)]="name" name="name">
+      <p>Meu nome é {{name}}</p>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,73 @@
+<section>
+  <h1>Ciclo de vida de um componente</h1>
+  <div>
+    <pre>ngOnChange</pre>
+    <span>
+      Esse hook é executado sempre uma vez no início e quando um valor 
+      de entrada em um componente é alterado.
+    </span>
+  </div>
+
+  <div>
+    <pre>ngOnInit</pre>
+    <span>
+      Esse hook é chamado após o Angular exibir pela primeira vez as 
+      propriedades vinculadas aos dados ou quando o componente for inicializado.
+    </span>
+  </div>
+
+  <div>
+    <pre>ngDoCheck</pre>
+    <span>
+      Esse hook é executado sempre que as propriedades de entrada de um componente são verificadas, ou seja, 
+      sempre valores ou alterações são adicionados aos componentes ou em seus filhos que 
+      <strong>ngOnChange</strong> não captou.
+      <strong>
+        Toda vez que tiver alterações ou mudanças de estado no componente (Incluindo o componente pai ou filho), 
+        esse hook será chamado.
+      </strong>
+    </span>
+  </div>
+  <p style="margin: 20px 0px;">
+    ATENÇÃO!!! ngDoCheck e ngOnChanges não devem ser implementados juntos no mesmo componente.
+  </p>
+  <div>
+    <pre>ngAfterContentInit</pre>
+    <span>
+      Esse hook é executado quando o angular realiza qualquer projeção de conteúdo nas visualizações do componente, 
+      em outras palavras, sempre que o conteúdo do componente for carregado (diferente do ngOnInit, que é 
+      chamado após a estrutura – templates e styles — serem renderizados ).
+    </span>
+  </div>
+
+  <div>
+    <pre>ngAfterContentChecked</pre>
+    <span>
+      Esse hook é executado após o conteúdo ou a visualização de um componente ser alterada.
+    </span>
+  </div>
+
+  <div>
+    <pre>ngAfterViewInit</pre>
+    <span>
+      Esse hook é executado depois que tudo do componente for carregado, ou seja,
+       depois que a visualização do componente foi totalmente iniciada.
+    </span>
+  </div>
+
+  <div>
+    <pre>ngAfterViewChecked</pre>
+    <span>
+      Esse hook é executado toda vez que a visualização de um determinado componente foi verificada pelo 
+      algoritmo de detecção de alterações do Angular
+    </span>
+  </div>
+
+  <div>
+    <pre>ngOnDestroy</pre>
+    <span>
+      Esse hook é executado sempre que um componente for finalizado ou destruído (sair da tela, ser desativado), 
+      ele é executado momentos antes dessa destruição.
+    </span>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+<section >
+  <h1>Primeiro Componente</h1>
+  <p class="paragrafo">Meu Estilo Scoped</p>
+  <p>{{variavel}}</p>
+  <p>{{funcao()}}</p>
+
+  <div>
+    <h2>Eventos básicos</h2>
+    <span>{{texto}}</span>
+    <button (click)="modificar()">
+      Modificar Texto
+    </button>
+  </div>
+
+  <div>
+    <h2>PIPERS OPERATORS</h2>
+    <p>{{"Texto em caixa alta" | uppercase }} - uppercase</p>
+    <p>{{"TEXTO EM CAIXA BAIXA" | lowercase }} - lowercase</p>
+    <p>{{"TEXTO com formato de Titulo" | titlecase }} - titlecase</p>
+    <p>{{data | date: "fullDate" }} - date: "/formato/"</p>
+  </div>
+</section>
+
+

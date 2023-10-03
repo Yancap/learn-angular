@@ -1,0 +1,19 @@
+section {
+  border: 4px solid green;
+}
+
+.paragrafo {
+  color: brown;
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: block;
+  transform: skewX(20deg);
+  background-color: antiquewhite;
+}
+
+div {
+  padding: 2rem .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

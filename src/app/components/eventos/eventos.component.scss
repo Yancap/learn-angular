@@ -1,0 +1,11 @@
+section {
+  border: 2px solid chocolate;
+}
+
+div {
+  padding: 1rem .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}

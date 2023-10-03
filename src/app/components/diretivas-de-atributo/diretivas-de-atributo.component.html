@@ -1,0 +1,18 @@
+<section [ngStyle]="active ? {border: '2px solid orange'} : {border: '2px solid blue'}">
+  <h1>Diretivas de Atributo</h1>
+  <div>
+    <p [ngStyle]="active ? {color: 'orange'} : {color: 'blue'}">
+      Modificando a Cor do texto por meio da Diretiva de Style
+    </p>
+    <p [ngClass]="active ? 'classe' : ''">
+      Modificando a Classe
+    </p>
+  </div>
+
+  <div>
+    
+    <button (click)="handleActive()">
+      Mudar
+    </button>
+  </div>
+</section>

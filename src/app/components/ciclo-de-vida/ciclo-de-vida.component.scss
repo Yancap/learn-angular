@@ -1,0 +1,17 @@
+section {
+  border: 2px solid green;
+}
+
+div{
+  display: flex;
+  align-items: start;
+  gap: 2px;
+  margin-bottom: 8px;
+  pre {
+    font-weight: bold;
+    font-size: 17px;
+  }
+  span{
+    font-size: 15px;
+  }
+}

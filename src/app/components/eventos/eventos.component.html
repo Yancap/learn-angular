@@ -1,0 +1,15 @@
+<section >
+  <h1>Eventos</h1>
+  <span>A base do funcionamento de eventos no Angular</span>
+  <div>
+    <h3>Click</h3>
+    <p *ngIf="active">Apareci se for verdadeiro</p>
+    <button (click)="handleClick()">Mudar</button>
+  </div>
+  <div>
+    <h3>Change</h3>
+    <p>{{text}}</p>
+    <input type="text" (change)="handleChange($event)">
+  </div>
+</section>
+
