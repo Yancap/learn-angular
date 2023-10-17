@@ -21,6 +21,7 @@ import { RequisicoesHttpComponent } from './components/requisicoes-http/requisic
 import { NgTemplateComponent } from './components/ng-template/ng-template.component';
 import { NgContentComponent } from './components/ng-content/ng-content.component';
 import { ComponenteDeForaComponent } from './components/ng-content/componente-de-fora/componente-de-fora.component';
+import { ClassAndStyleBindingComponent } from './components/class-and-style-binding/class-and-style-binding.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ComponenteDeForaComponent } from './components/ng-content/componente-de
     NgTemplateComponent,
     NgContentComponent,
     ComponenteDeForaComponent,
+    ClassAndStyleBindingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

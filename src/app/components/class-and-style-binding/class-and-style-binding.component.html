@@ -1,0 +1,26 @@
+<section>
+  <h1>Class e Styles Binding</h1>
+  <div>
+    <h2>Selecione uma classe</h2>
+    <select #classe (change)="true">
+      <option value="blue">Blue</option>
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+    </select>
+
+    <p class="{{classe.value}}">
+      Background com base no SELECT
+    </p>
+    <br><br>
+    <p [class.red]="classe.value == 'red'" [style.display]="classe.value === 'red' ? 'block' : 'none' ">
+      BG vermelho
+    </p>
+    <p [class.green]="classe.value == 'green'">
+      BG azul
+    </p>
+    <p [class.blue]="classe.value == 'blue'">
+      BG verde
+    </p>
+  </div>
+  
+</section>
