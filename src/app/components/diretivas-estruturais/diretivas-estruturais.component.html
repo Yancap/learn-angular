@@ -21,6 +21,15 @@
   </div>
 
   <div>
+    <h2>Renderização Condicional - SWITCH CASE</h2>
+    <section [ngSwitch]="'yan'">
+      <p *ngSwitchCase="'yan'">Yan</p>
+      <p *ngSwitchCase="'gabriel'">Gabriel</p>
+      <p *ngSwitchDefault>Sem nome</p>
+    </section>
+  </div>
+
+  <div>
     <h2>Renderização de Multiplos elementos - For</h2>
     <ul style="padding-left: 1rem;">
       <h3>Array de Strings</h3>

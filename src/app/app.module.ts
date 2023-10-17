@@ -18,6 +18,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { PaginaComponent } from './pages/pagina/pagina.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RequisicoesHttpComponent } from './components/requisicoes-http/requisicoes-http.component';
+import { NgTemplateComponent } from './components/ng-template/ng-template.component';
+import { NgContentComponent } from './components/ng-content/ng-content.component';
+import { ComponenteDeForaComponent } from './components/ng-content/componente-de-fora/componente-de-fora.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,9 @@ import { RequisicoesHttpComponent } from './components/requisicoes-http/requisic
     HomeComponent,
     PaginaComponent,
     RequisicoesHttpComponent,
+    NgTemplateComponent,
+    NgContentComponent,
+    ComponenteDeForaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

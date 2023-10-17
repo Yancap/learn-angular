@@ -1,0 +1,15 @@
+<section>
+  <h1>ng-template</h1>
+  <div>
+    <h2>Renderização condicional</h2>
+    <ng-template [ngIf]="true">
+      <p>TRUE</p>
+    </ng-template>
+  </div>
+  <div>
+    <h2>Renderização multipla</h2>
+    <ng-template ngFor let-item [ngForOf]="[1,2,3,4]">
+      <p>{{item}}</p>
+    </ng-template>
+  </div>
+</section>
