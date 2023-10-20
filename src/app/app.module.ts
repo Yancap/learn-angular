@@ -22,6 +22,7 @@ import { NgTemplateComponent } from './components/ng-template/ng-template.compon
 import { NgContentComponent } from './components/ng-content/ng-content.component';
 import { ComponenteDeForaComponent } from './components/ng-content/componente-de-fora/componente-de-fora.component';
 import { ClassAndStyleBindingComponent } from './components/class-and-style-binding/class-and-style-binding.component';
+import { ViewChildComponent } from './components/view-child/view-child.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ClassAndStyleBindingComponent } from './components/class-and-style-bind
     NgContentComponent,
     ComponenteDeForaComponent,
     ClassAndStyleBindingComponent,
+    ViewChildComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

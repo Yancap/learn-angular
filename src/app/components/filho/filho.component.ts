@@ -8,10 +8,12 @@ interface Dados {
 @Component({
   selector: 'app-filho',
   templateUrl: './filho.component.html',
-  styleUrls: ['./filho.component.scss']
+  styleUrls: ['./filho.component.scss'],
+  inputs: ["outro"]
 })
 export class FilhoComponent {
   @Input() public titulo!: string;
   @Input() public texto!: string;
   @Input() public dados!: Dados;
+  public outro!: string;
 }

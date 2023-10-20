@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   title = 'learn-angular';
   texto = "Texto passado como variável";
+  outroValor = 0;
+  mudarValor = () => {this.outroValor++}
 }
