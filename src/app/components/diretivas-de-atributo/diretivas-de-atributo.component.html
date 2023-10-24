@@ -4,6 +4,12 @@
     <p [ngStyle]="active ? {color: 'orange'} : {color: 'blue'}">
       Modificando a Cor do texto por meio da Diretiva de Style
     </p>
+    <p [ngStyle]="{
+      'color': active ? 'blue' : 'red',
+      'fontSize': active ? '20px' : '40px',
+    }">
+      Modificando a Cor do texto por meio da Diretiva de Style
+    </p>
     <p [ngClass]="active ? 'classe' : ''">
       Modificando a Classe
     </p>

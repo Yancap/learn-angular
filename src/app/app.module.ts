@@ -23,6 +23,9 @@ import { NgContentComponent } from './components/ng-content/ng-content.component
 import { ComponenteDeForaComponent } from './components/ng-content/componente-de-fora/componente-de-fora.component';
 import { ClassAndStyleBindingComponent } from './components/class-and-style-binding/class-and-style-binding.component';
 import { ViewChildComponent } from './components/view-child/view-child.component';
+import { DiretivaPersonalizadaDirective } from './shared/diretiva-personalizada.directive';
+import { DiretivasCustomizadasComponent } from './components/diretivas-customizadas/diretivas-customizadas.component';
+import { DiretivaEventoDirective } from './shared/diretiva-evento.directive';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,9 @@ import { ViewChildComponent } from './components/view-child/view-child.component
     ComponenteDeForaComponent,
     ClassAndStyleBindingComponent,
     ViewChildComponent,
+    DiretivaPersonalizadaDirective,
+    DiretivasCustomizadasComponent,
+    DiretivaEventoDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
