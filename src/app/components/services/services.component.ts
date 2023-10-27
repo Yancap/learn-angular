@@ -4,7 +4,8 @@ import { TestService } from './test.service';
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
-  styleUrls: ['./services.component.scss']
+  styleUrls: ['./services.component.scss'],
+  providers: [TestService]
 })
 export class ServicesComponent {
   public data: any[] = [];

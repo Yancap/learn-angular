@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { LOCALE_ID, NgModule } from '@angular/core';
+import '@angular/common/locales/global/pt';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +27,8 @@ import { ViewChildComponent } from './components/view-child/view-child.component
 import { DiretivaPersonalizadaDirective } from './shared/diretiva-personalizada.directive';
 import { DiretivasCustomizadasComponent } from './components/diretivas-customizadas/diretivas-customizadas.component';
 import { DiretivaEventoDirective } from './shared/diretiva-evento.directive';
+import { ExemploPipesComponent } from './components/exemplo-pipes/exemplo-pipes.component';
+import { CamelCasePipe } from './shared/camel-case.pipe';
 
 @NgModule({
   declarations: [
@@ -51,9 +54,13 @@ import { DiretivaEventoDirective } from './shared/diretiva-evento.directive';
     DiretivaPersonalizadaDirective,
     DiretivasCustomizadasComponent,
     DiretivaEventoDirective,
+    ExemploPipesComponent,
+    CamelCasePipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'pt' }
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

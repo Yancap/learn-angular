@@ -1,0 +1,24 @@
+<section>
+  <h1>PIPES</h1>
+  <div>
+    <h2>Exemplos de Pipes</h2>
+
+    <p>Título: {{ livro.titulo | uppercase | lowercase }}</p>
+    <p>Estrelas: {{ livro.rating | number: '1.1-2' }}</p>
+    <p>Páginas: {{ livro.numeroPaginas | number }}</p>
+    <p>Preço: {{ livro.preco | currency:'BRL':true }}</p>
+    <p>Data Lançamento: {{ livro.dataLancamento | date:'dd-MMM-yyyy' }}</p>
+    <p>Url: {{ livro.url }}</p>
+    <br>
+    <p>Livro: {{ livro | json }}</p>
+  </div>
+  <div>
+    <h2>Meu PIPE CUSTOMIZADO</h2>
+    <p>{{'texto em camel case' | camelCase}}</p>
+  </div>
+  <div>
+    <h2>PIPE ASYNC</h2>
+    <p>{{valorAsync | async}}</p>
+    <p>{{valorAsync2 | async}}</p>
+  </div>
+</section>
